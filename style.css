@@ -1,0 +1,115 @@
+.dropgifs {
+  margin-top: 500px; /* Adjust value to move elements further down */
+}
+
+/* Ensure the GIF container has relative positioning */
+.dropgifs {
+  position: relative;
+  width: 1900px; /* Set the container width */
+  height: auto; /* Set the container height */
+}
+
+/* All GIFs hidden by default */
+.dropgifs img {
+  display: none;
+  position: absolute; /* Stack GIFs on top of each other */
+  top: 50%; /* Default vertical alignment (adjusted later for specific GIFs) */
+  left: 50%; /* Default horizontal alignment (adjusted later for specific GIFs) */
+  transform: translate(-50%, -50%); /* Center GIFs in the container */
+  width: 100%; /* Default size for GIFs */
+  height: auto;
+}
+
+/* GIF 2: Smaller size */
+.dropgifs img:nth-child(2) {
+  width: 32%; /* Make GIF 2 smaller than GIF 3 */
+  z-index: 2; /* Ensure GIF 2 appears above GIF 3 */
+}
+
+/* GIF 3: Larger size */
+.dropgifs img:nth-child(3) {
+  width: 100%; /* GIF 3 fills the container */
+  z-index: 1; /* Ensure GIF 3 is behind GIF 2 */
+}
+
+/* Show active GIFs */
+.dropgifs img.active {
+  display: block;
+}
+
+.s{
+  font-family:'Times New Roman', Times, serif;
+  position: absolute;
+  font-size: 600pt;
+  top: -750px;
+  left: 60px;
+  rotate: -27deg;
+}
+
+.t{
+  font-family:Arial, Helvetica, sans-serif;
+  position: absolute;
+  font-size: 400pt;
+  top: -580px;
+  left: 320px;
+  rotate: 2deg;
+}
+
+.r{
+  font-family:'Courier New', Courier, monospace;
+  position: absolute;
+  font-size: 600pt;
+  top: -880px;
+  left: 540px;
+  rotate: 22deg;
+}
+
+
+.a{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: absolute;
+  font-size: 200pt;
+  top: 50px;
+  left: 900px;
+  rotate: -8deg;
+}
+
+.i{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  position: absolute;
+  font-size: 460pt;
+  top: -580px;
+  left: 1029px;
+  rotate: -11deg;
+}
+
+.n{
+  font-family:Georgia, 'Times New Roman', Times, serif ;
+  position: absolute;
+  font-size: 250pt;
+  top: -10px;
+  left: 1180px;
+  rotate: 5deg; 
+}
+
+span.stretch {
+  display:inline-block;
+  -webkit-transform:scale(1,1.6); /* Safari and Chrome */
+  -moz-transform:scale(1,1.6); /* Firefox */
+  -ms-transform:scale(1,1.6); /* IE 9 */
+  -o-transform:scale(1,1.6); /* Opera */
+  transform:scale(1,1.6); /* W3C */
+}
+
+.page2type {
+  color:rgb(255, 255, 255);
+}
+
+.a-link {
+  position:absolute;
+  font-size: 200pt;
+  top: 550px;
+  left: 600px;
+  color: white;
+}
+
